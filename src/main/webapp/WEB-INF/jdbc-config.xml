@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+    <!--<jdbc:embedded-database id="dataSource" type="H2">-->
+        <!--<jdbc:script location="classpath:mysql-schema-create.sql" />-->
+        <!--&lt;!&ndash;<jdbc:script location="classpath:db-test-data.sql" />&ndash;&gt;-->
+    <!--</jdbc:embedded-database>-->
+
+    <bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+        <property name="url" value="jdbc:sqlserver://localhost;databaseName=Library;integratedSecurity=true;"/>
+        <property name="username" value="" />
+        <property name="password" value="" />
+    </bean>
+    <jdbc:initialize-database data-source="dataSource" enabled="true">
+        <jdbc:script location="classpath:mssqlserver-schema-create.sql" />
+        <jdbc:script location="classpath:sp_attachAuthorToBook.sql" />
+    </jdbc:initialize-database>
+</beans>
