@@ -29,7 +29,7 @@ sorting by book titles and author names.<br></li>
 <li>intensive working with DOM model via javascript<br></li>
 <li>modern styling of front-page<br></li>
 <li>testing of all application layers (DAO, controllers, user interface)<br></li>
-<li>testing UI with Selenium Web driver<br></li>
+<li>testing UI with Selenium Web driver (in DSL style)<br></li>
 </ul><br>
 
 <b><i>Project setup:</i></b>
