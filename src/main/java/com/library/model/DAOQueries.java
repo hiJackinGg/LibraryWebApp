@@ -1,6 +1,8 @@
 package com.library.model;
 
-
+/**
+ * Complex SELECT queries used by DAO
+ */
 public class DAOQueries {
 
     public static final String GET_ALL_BOOKS_SORTED_BY_TITLE = "select b.id, b.title, b.quantity, a.name, b.totalrows from "+

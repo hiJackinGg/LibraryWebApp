@@ -159,6 +159,14 @@
 			<version>3.0.1</version>
 		</dependency>
 
+		<!--Important note!!!-->
+		<!--Uncomment it if your MSSQL jdbc driver is already in local Maven repository-->
+		<!--<dependency>-->
+			<!--<groupId>com.microsoft.sqlserver</groupId>-->
+			<!--<artifactId>sqljdbc4</artifactId>-->
+			<!--<version>4.0</version>-->
+		<!--</dependency>-->
+
 	</dependencies>
 
 	<build>
@@ -176,7 +184,13 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warName>Library Maven Webapp</warName>
+				</configuration>
+			</plugin>
 
 		</plugins>
 

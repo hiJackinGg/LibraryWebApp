@@ -1,40 +1,40 @@
 ﻿// example of json with data for books table
-var tableData = '{'+
-    '"totalRows": 9,'+
-    '"pageNumber": 2,'+
-    '"pageSize": 3,'+
-    '"totalPages": 3,'+
-    '"isAuthorized": false,'+
-    '"books": [{'+
-
-    '"id": 1,'+
-    '"title": "Java programming",'+
-    '"quantity": 3,'+
-    '"authors": ["Hortsman", "Cornel"]'+
-    '},'+
-    '{'+
-
-    '"id": 2,'+
-    ' "title": "For whom the bell tolls",'+
-    ' "quantity": 3,'+
-    ' "authors": ["Hemigway"]'+
-    '}'+
-    ']'+
-    '}';
+//var tableData = '{'+
+//    '"totalRows": 9,'+
+//    '"pageNumber": 2,'+
+//    '"pageSize": 3,'+
+//    '"totalPages": 3,'+
+//    '"isAuthorized": false,'+
+//    '"books": [{'+
+//
+//    '"id": 1,'+
+//    '"title": "Java programming",'+
+//    '"quantity": 3,'+
+//    '"authors": ["Hortsman", "Cornel"]'+
+//    '},'+
+//    '{'+
+//
+//    '"id": 2,'+
+//    ' "title": "For whom the bell tolls",'+
+//    ' "quantity": 3,'+
+//    ' "authors": ["Hemigway"]'+
+//    '}'+
+//    ']'+
+//    '}';
 
 // example of json with data for book details table
-var detailsData = '{'+
-    '"details": [{'+
-    '"date": "2014-02-03",'+
-    '"email": "adddddsd@yandex.ru"'+
-    '}, {'+
-    '"date": "2010-08-03",'+
-    '"email": "212asd@yandex.ru"'+
-    '}, {'+
-    '"date": "2000-01-22",'+
-    '"email": "a11sd@yandex.ru"'+
-    '}]'+
-    '}';
+//var detailsData = '{'+
+//    '"details": [{'+
+//    '"date": "2014-02-03",'+
+//    '"email": "adddddsd@yandex.ru"'+
+//    '}, {'+
+//    '"date": "2010-08-03",'+
+//    '"email": "212asd@yandex.ru"'+
+//    '}, {'+
+//    '"date": "2000-01-22",'+
+//    '"email": "a11sd@yandex.ru"'+
+//    '}]'+
+//    '}';
 
 
 var grid = {

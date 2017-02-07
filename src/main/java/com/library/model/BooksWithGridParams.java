@@ -4,6 +4,9 @@ package com.library.model;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Object to be converted to JSON and return to the client for ajax table
+ */
 public class BooksWithGridParams {
 
     private List<Book> books;

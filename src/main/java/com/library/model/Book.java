@@ -3,6 +3,9 @@ package com.library.model;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * domain object
+ */
 public class Book {
 
     private int id;

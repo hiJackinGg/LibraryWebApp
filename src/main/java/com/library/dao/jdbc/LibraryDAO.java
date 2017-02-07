@@ -178,7 +178,7 @@ public class LibraryDAO {
                 while (resultSet.next()) {
                     date = resultSet.getDate(1).toString();
                     user = resultSet.getString(2);
-                    pair = new SimpleEntry<String, String>(date, user);
+                    pair = new SimpleEntry<>(date, user);
                     details.add(pair);
                 }
 

@@ -5,6 +5,9 @@ import java.util.AbstractMap;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * domain object
+ */
 public class BookDetails {
 
     private List<AbstractMap.SimpleEntry<String, String>> details;

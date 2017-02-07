@@ -46,11 +46,6 @@ public class BaseController {
 		String userEmail = (String)request.getSession().getAttribute("user_email");
 
 		BooksWithGridParams booksWithGridParams = null;
-		System.out.println(pageSize);
-		System.out.println(pageNumber);
-		System.out.println(filter);
-		System.out.println(fieldSortBy);
-		System.out.println(asc);
 
 		if (filter == 1) {
 			booksWithGridParams = libraryDAO.getAllBooks(pageNumber, pageSize, fieldSortBy, asc);
@@ -157,6 +152,11 @@ public class BaseController {
 		return "redirect:getBooks";
 	}
 
+	/**
+	 * send mail to the user
+	 * @param bookId
+	 * @param userEmail
+     */
 	public void sendNotification(int bookId, String userEmail)
 	{
 		String body = "You took a book in our library. (Id of the book is - " + bookId + ")";
