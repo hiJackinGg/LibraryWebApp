@@ -1,5 +1,5 @@
 # LibraryWebApp
-<b><i>Description:</i></b> simplified Library application.<br><br>
+<b><i>Description:</i></b> simplified Library web application.<br><br>
 <b><i>The application functionality:</i></b><br>
 <ul>
 <li>managing books available in the library: adding, removing, changing quantity. Each book
